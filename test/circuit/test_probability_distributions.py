@@ -1,6 +1,6 @@
 # This code is part of a Qiskit project.
 #
-# (C) Copyright IBM 2017, 2024.
+# (C) Copyright IBM 2017, 2025.
 #
 # This code is licensed under the Apache License, Version 2.0. You may
 # obtain a copy of this license in the LICENSE.txt file in the root directory
@@ -147,10 +147,10 @@ class TestNormalDistribution(QiskitFinanceTestCase):
 
 @ddt
 class TestLogNormalDistribution(QiskitFinanceTestCase):
-    """Test the normal distribution circuit."""
+    """Test the log-normal distribution circuit."""
 
     def assertDistributionIsCorrect(self, circuit, num_qubits, mu, sigma, bounds, upto_diag):
-        """Assert that ``circuit`` implements the normal distribution correctly.
+        """Assert that ``circuit`` implements the log-normal distribution correctly.
 
         This test asserts that the ``circuit`` produces the desired state-vector.
         """
